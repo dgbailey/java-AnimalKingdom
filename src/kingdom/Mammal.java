@@ -12,6 +12,16 @@ public class Mammal extends AbstractAnimal
         this.dateDiscovered = dateDiscovered;
     }
 
+    public String getName()
+    {
+        return this.name;
+    }
+
+    public int getDate()
+    {
+        return this.dateDiscovered;
+    }
+
     @Override
     public String move()
     {
