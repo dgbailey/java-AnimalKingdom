@@ -5,7 +5,7 @@ public class Fish extends AbstractAnimal
 {
     
     
-    public Fish(String name,Date dateDiscovered)
+    public Fish(String name,int dateDiscovered)
     {
         
         this.name = name;
@@ -29,6 +29,13 @@ public class Fish extends AbstractAnimal
     {
         return "eggs";
     }
+
+    @Override
+	public String toString()
+	{
+		return "idnum" + idnum +" name = " + name + "\n" + "discovered = " + dateDiscovered;
+	}
+
     
 
 }

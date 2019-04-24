@@ -5,11 +5,13 @@ public abstract class AbstractAnimal
 {
     public static int maxId = 0;
     int idnum;
+    String name;
+    int dateDiscovered;
     
 
     public AbstractAnimal()
     {
-        madId++;
+        maxId++;
         idnum = maxId;
         
     }

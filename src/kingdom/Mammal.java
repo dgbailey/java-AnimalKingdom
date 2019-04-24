@@ -5,7 +5,7 @@ public class Mammal extends AbstractAnimal
 {
     
     
-    public Mammal(String name,Date dateDiscovered)
+    public Mammal(String name,int dateDiscovered)
     {
         
         this.name = name;
@@ -30,5 +30,10 @@ public class Mammal extends AbstractAnimal
         return "live births";
     }
     
+    @Override
+	public String toString()
+	{
+		return "idnum: " + idnum +" name = " + name + "\n" + "discovered = " + dateDiscovered;
+	}
 
 }
